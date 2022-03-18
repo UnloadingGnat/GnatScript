@@ -1,4 +1,6 @@
-from gnatScript.gs import run
+from GnatScript.gs import run
+from colorama import Fore
+
 
 ##
 # gShell
@@ -7,13 +9,15 @@ from gnatScript.gs import run
 # v 0.1.1
 
 
-print("GnatScript 0.1.0\n")
+print(Fore.GREEN + "GnatScript 0.1.0\n")
+print(Fore.RESET)
 
 while True:
     text = input('>>> ')
-    result, error = run("System.input", text)
+    result, error = run("gShell", text)
 
     if error:
-        print(error.toString())
+        print(Fore.RED + error.toString())
+        print(Fore.RESET)
     else:
         print(result)

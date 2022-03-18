@@ -4,9 +4,9 @@
 # @date 2022-03-18
 # v 0.1.0
 
-from gnatScript.token import GST_DIV, GST_FLOAT, GST_INT, GST_LPAREN, GST_MINUS, GST_MUL, GST_PLUS, GST_RPAREN, Token
-from gnatScript.error import IllegalCharError
-from gnatScript.position import Position
+from GnatScript.token import GST_DIV, GST_FLOAT, GST_INT, GST_LPAREN, GST_MINUS, GST_MUL, GST_PLUS, GST_RPAREN, Token
+from GnatScript.error import IllegalCharError
+from GnatScript.position import Position
 
 ##############################
 # Constants

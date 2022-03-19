@@ -15,7 +15,7 @@ while True:
     result, error = run("gShell", text)
 
     if error:
-        print(Fore.RED + error.toString())
+        print(Fore.RED + str(error))
         print(Fore.RESET)
     else:
         print(result)

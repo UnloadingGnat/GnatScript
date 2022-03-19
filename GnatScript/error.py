@@ -6,13 +6,14 @@
 
 
 class Error:
+    """Error Handler For GnatScript"""
     def __init__(self, errorStart, errorEnd, errorName, details):
         self.errorStart = errorStart
         self.errorEnd = errorEnd
         self.errorName = errorName
         self.details = details
 
-    def toString(self):
+    def __str__(self):
         return f'{self.errorName}: {self.details}\nFile "{self.errorStart.fileName}", Line {self.errorStart.line}, Column {self.errorStart.column}'
 
 

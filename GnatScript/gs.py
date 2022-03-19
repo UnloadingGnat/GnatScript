@@ -1,5 +1,5 @@
 ##
-# Run
+# GnatScript (gs.py)
 # @author UnloadingGnat
 # @date 2022-03-18
 # v 0.1.0

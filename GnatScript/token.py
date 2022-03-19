@@ -22,6 +22,10 @@ class Token:
 
     def __repr__(self):
         if self.value:
+            return f'Token("{self.type}":{self.value})'
+        return f'Token("{self.type}")'
+    
+    def __str__(self):
+        if self.value:
             return f'{self.type}:{self.value}'
         return f'{self.type}'
-

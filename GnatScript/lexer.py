@@ -15,6 +15,7 @@ NUMBERS = '0123456789'
 
 
 class Lexer:
+    """Lexer for GnatScript"""
     def __init__(self, fileName, text):
         self.fileName = fileName
         self.text = text
